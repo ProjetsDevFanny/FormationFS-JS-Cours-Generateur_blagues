@@ -1,4 +1,4 @@
-# G-n-rateur_blagues
+# Generateur_blagues
 TP : Afficher des blagues Chuck Norris depuis une API
 
 Objectif :
