@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=DM+Serif+Text:ital@0;1&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mystery+Quest&family=Raleway:ital,wght@0,100..900;1,100..900&family=Send+Flowers&display=swap');
+
 body {
   display: flex;
   text-align: center;
@@ -7,18 +9,42 @@ body {
   overflow: hidden;
   margin: 0;
   box-sizing: border-box;
- 
+  border-color: blanchedalmond;
+
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: rgb(220, 181, 151);
   height: 400px;
   width: 40%;
   border-radius: 120px;
   color: brown;
   box-shadow: 0px 0px 6px 4px rgb(184, 142, 142);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .app:active {
+  transform: scale(1.05);
+}
+
+h2,
+p {
+  font-family: "Send Flowers", cursive;
+  font-style: normal;
+  margin: 0px 20px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 2.5rem;
 
 }
