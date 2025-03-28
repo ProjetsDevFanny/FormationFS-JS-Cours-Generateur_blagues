@@ -9,33 +9,36 @@ body {
   overflow: hidden;
   margin: 0;
   box-sizing: border-box;
-  border-color: blanchedalmond;
+  background-color: blanchedalmond;
 
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: rgb(220, 181, 151);
-  height: 400px;
-  width: 40%;
+  /* Adapter la taille de la div à la blague: */
+  display: inline-block; /* La div s'ajuste à son contenu */
+  padding: 50px; /* Pour éviter que le texte soit collé aux bords */
+  width: auto;
+  max-width: 70%;
+  /* word-wrap: break-word; /* Coupe les mots si nécessaire */
+  /* white-space: normal; Permet les retours à la ligne */ 
+  
   border-radius: 120px;
+  background-color: rgb(220, 181, 151); 
   color: brown;
   box-shadow: 0px 0px 6px 4px rgb(184, 142, 142);
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
-.app:active {
-  transform: scale(1.05);
+.app.fade {
+  opacity: 0;
 }
 
 h2,
 p {
   font-family: "Send Flowers", cursive;
   font-style: normal;
-  margin: 0px 20px;
+  /* margin: 10px; */ */
 }
 
 h2 {
